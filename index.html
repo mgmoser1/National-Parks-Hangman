@@ -5,24 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess Game</title>
-    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <div>
-        <h2 id="directions-text">Press any key to get started!</h2>
-        <h3>Wins: </h3><h3 id="win-count"></h3>
-        <h3>Current Word: </h3><h3 id="current-word"></h3>
-        <h3>Guesses Remaining: </h3><h3 id="guess-count"></h3>
-        <h3>Letters Guessed: </h3><h3 id="letters-guessed"></h3>
-    </div>
+    
+        <div class="jumbotron subject">
+                <h1 class="display-4">National Parks Hangman!</h1>
+                <p id="directions-text" class="lead">Press any key to get started.</p>
+        </div>
+    <div class="container-fluid">
+        <div class="container-fluid row content">
+            
+            <div class="col-md-4 my-auto h-100">
+                <img id="yellowstone" src="assets/images/yosemite.jpg" style="width:400px;height:266.67px" alt="A vividly colored hot spring pool."/>
+            </div>
+            <div class="col-md-4 content my-auto h-100">
+                <div class="row justify-content-center">
+                    <div class="card text" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Current Word</h5>
+                            <!-- <hr> -->
+                            <p class="card-text" id="current-word"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="card text" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Letters Guessed</h5>
+                        <!-- <hr> -->
+                        <p class="card-text" id="letters-guessed"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+                <div class="col-md-4 content my-auto h-100">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 my-auto h-100">
+                        <div class="card text" style="width: 10rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Wins</h5>
+                                <!-- <hr> -->
+                                <p class="card-text" id="win-count"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-auto h-100">
+                        <div class="card text" style="width: 10rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Losses</h5>
+                                <!-- <hr> -->
+                                <p class="card-text" id="loss-count"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card text" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Guesses Remaining</h5>
+                            <!-- <hr> -->
+                            <p class="card-text" id="guess-count"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div> <!-- content -->
 
-  
-<!-- Insert underscores here for word. -->
-    
-<!-- Display number of guesses left -->
-    
-<!-- Display previously guessed letters -->
-    <script src="assets/javascript/game.js">document.write (lettersGuessed);</script>
+  </div> <!-- container-fluid -->  
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>

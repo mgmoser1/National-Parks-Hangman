@@ -1,0 +1,11 @@
+.subject {
+    color: green;
+    background-color: lightslategray;
+    text-align: center;
+  }
+
+.text {
+    margin: 15px 20px 20px 20px;
+    text-align: center;
+}
+
